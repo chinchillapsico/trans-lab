@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	
     $('#contact_form').bootstrapValidator({
         feedbackIcons: {
             valid: 'glyphicon glyphicon-ok',
