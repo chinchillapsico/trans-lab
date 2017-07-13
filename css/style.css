@@ -2,7 +2,7 @@
 *{
 	padding: 0; 
 	margin: 0;
-	font-family: sans-serif;
+	font-family: 'Fira Sans', sans-serif;
 }
 
 
@@ -341,13 +341,21 @@ input{ /*inputs sin bordes*/
 #success_message{ display: none;}
 
 
-legend{
+#title-h1{
 	font-family: 'Alfa Slab One', cursive;
+	font-size:20px;
+	padding:20px;
+	margin-bottom: 60px;
 }
 #img-logo{
-	width: 30%;
-	align-items: center;
+	width: 35%;
+	margin: 0 auto;
+	padding: 20px;
 
+}
+#btn-submit{
+	color:#212121; 
+	background-color:#f6a800;
 }
 
 

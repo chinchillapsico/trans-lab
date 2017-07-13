@@ -6,26 +6,7 @@ $(document).ready(function() {
             validating: 'glyphicon glyphicon-refresh'
         },
         fields: {
-            first_name: {
-                validators: {
-                        stringLength: {
-                        min: 2,
-                    },
-                        notEmpty: {
-                        message: 'Por favor ingresa tu nombre.'
-                    }
-                }
-            },
-             last_name: {
-                validators: {
-                     stringLength: {
-                        min: 2,
-                    },
-                    notEmpty: {
-                        message: 'Por favor ingresa tu apellido.'
-                    }
-                }
-            },
+             
             email: {
                 validators: {
                     notEmpty: {
@@ -36,6 +17,21 @@ $(document).ready(function() {
                     }
                 }
             },
+           
+            password: {
+                validators: {
+                    notEmpty: {
+                        message: 'Por favor ingresa tu contraseña.'
+                    },
+                    numeric: {
+                            message: 'Tu contraseña debe contener solo números',
+                        },
+                    stringLength: {
+                        min: 4,
+                        max: 8,
+                    	},    
+                	}
+           		 },
             
             }
         })
