@@ -338,11 +338,16 @@ input{ /*inputs sin bordes*/
 
 
 /**********************************ESTILOS real****************************************/
-
-
-
 #success_message{ display: none;}
+
+
 legend{
 	font-family: 'Alfa Slab One', cursive;
 }
+#img-logo{
+	width: 30%;
+	align-items: center;
+
+}
+
 
