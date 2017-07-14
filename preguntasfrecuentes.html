@@ -15,68 +15,104 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="jumbotron">
-        <h1 class="text-center">Preguntas frecuentes</h1>
-    </div>  
-    <div class="container ">
-    <div class="panel-group" id="faqAccordion">
-        <div class="panel panel-default ">
-            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
-                 <h4 class="panel-title">
-                    <a href="#" class="ing">¿Cómo reviso la historia de los movimientos de mi tarjeta bip!?</a>
-              </h4>
-
-            </div>
-            <div id="question0" class="panel-collapse collapse" style="height: 0px;">
-                <div class="panel-body">
-                    <p>Revisa las transacciones de tu tarjeta de los últimos 90 días ingresando a la sección “bip! en línea!” o pinchando este <a href="http://pocae.tstgo.cl/PortalCAE-WAR-MODULE/" class="label label-success">Link.</a> 
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default ">
-            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
-                 <h4 class="panel-title">
-                    <a href="#" class="ing">¿Qué es una tarjeta bip! personalizada?</a>
-              </h4>
-
-            </div>
-            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
-                <div class="panel-body">
-                    <p>Es un tipo de bip! que tiene foto, nombre y rut del usuario. Tiene un valor de $2.800 y puede ser adquirida en cualquiera de las cinco oficinas de servicio al cliente ubicadas en Estado 383, Metro Plaza Puente Alto, Sub centro Metro escuela Militar, Metro la Cisterna, Metro Vespucio Norte</p>
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default ">
-            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question2">
-                 <h4 class="panel-title">
-                    <a href="#" class="ing">¿Qué es un Centro bip?</a>
-              </h4>
-
-            </div>
-            <div id="question2" class="panel-collapse collapse" style="height: 0px;">
-                <div class="panel-body">
-                    <p>Son oficinas donde puedes comprar, cargar y consultar el saldo de tu bip!, además de activar cargas remotas. La mayoría de los Centro bip! son locales compartidos con servicios de atención de Servipag y ServiEstado. Para conocer su ubicación y horarios de atención pincha este <a href="http://www.tarjetabip.cl/donde-puedo-cargar.php" class="label label-success">Link.</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default ">
-            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question3">
-                 <h4 class="panel-title">
-                    <a href="#" class="ing">¿Dónde puedo encontrar la documentación de este sitio?</a>
-              </h4>
-
-            </div>
-            <div id="question3" class="panel-collapse collapse" style="height: 0px;">
-                <div class="panel-body">
-                    <p>Puedes encontrar toda la documentación utilizada en el siguiente <a href="http://bip-servicio.herokuapp.com/" class="label label-success">Link.</a></p>
-                </div>
-            </div>
-        </div>
+    <div id="wrapper">
+        <div class="overlay"></div>
         
-    </div>
+            <!-- Sidebar -->
+            <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+                <ul class="nav sidebar-nav">
+                    <li class="sidebar-brand">
+                        <h1  id="title-h1" class="text-center">TRANS-LAB</h1>
+                    <li>
+                        <a href="file:///home/laboratoria/Desktop/trabajos-sprint-5/trans-lab/index4.html">VER SALDO</a>
+                    </li>
+                    <li>
+                        <a href="file:///home/laboratoria/Desktop/trabajos-sprint-5/trans-lab/tarifa.html">CALCULAR TARIFA</a>
+                    </li>
+                    <li>
+                        <a href="file:///home/laboratoria/Desktop/trabajos-sprint-5/trans-lab/profile.html#">PERFIL</a>
+                    </li>
+                    <li>
+                        <a href="file:///home/laboratoria/Desktop/trabajos-sprint-5/trans-lab/preguntasfrecuentes.html">PREGUNTAS FRECUENTES</a>
+                    </li>
+                    
+                    <li>
+                        <a href="file:///home/laboratoria/Desktop/trabajos-sprint-5/trans-lab/home.html#">HOME</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                    <span class="hamb-top"></span>
+                    <span class="hamb-middle"></span>
+                    <span class="hamb-bottom"></span>
+                </button>  
+            <div class="container">
+                <div class="jumbotron">
+                    <h1 class="text-center">Preguntas frecuentes</h1>
+                </div>  
+                <div class="container ">
+                    <div class="panel-group" id="faqAccordion">
+                        <div class="panel panel-default ">
+                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
+                                <h4 class="panel-title">
+                                    <a href="#" class="ing">¿Cómo reviso la historia de los movimientos de mi tarjeta bip!?</a>
+                                </h4>
+
+                            </div>
+                        <div id="question0" class="panel-collapse collapse" style="height: 0px;">
+                                <div class="panel-body">
+                                    <p>Revisa las transacciones de tu tarjeta de los últimos 90 días ingresando a la sección “bip! en línea!” o pinchando este <a href="http://pocae.tstgo.cl/PortalCAE-WAR-MODULE/" class="label label-success">Link.</a> 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default ">
+                            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                                 <h4 class="panel-title">
+                                    <a href="#" class="ing">¿Qué es una tarjeta bip! personalizada?</a>
+                                </h4> 
+
+                            </div>
+                            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                                <div class="panel-body">
+                                    <p>Es un tipo de bip! que tiene foto, nombre y rut del usuario. Tiene un valor de $2.800 y puede ser adquirida en cualquiera de las cinco oficinas de servicio al cliente ubicadas en Estado 383, Metro Plaza Puente Alto, Sub centro Metro escuela Militar, Metro la Cisterna, Metro Vespucio Norte</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default ">
+                            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question2">
+                                <h4 class="panel-title">
+                                    <a href="#" class="ing">¿Qué es un Centro bip?</a>
+                                </h4>
+
+                            </div>
+                            <div id="question2" class="panel-collapse collapse" style="height: 0px;">
+                                <div class="panel-body">
+                                    <p>Son oficinas donde puedes comprar, cargar y consultar el saldo de tu bip!, además de activar cargas remotas. La mayoría de los Centro bip! son locales compartidos con servicios de atención de Servipag y ServiEstado. Para conocer su ubicación y horarios de atención pincha este <a href="http://www.tarjetabip.cl/donde-puedo-cargar.php" class="label label-success">Link.</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default ">
+                            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question3">
+                                <h4 class="panel-title">
+                                    <a href="#" class="ing">¿Dónde puedo encontrar la documentación de este sitio?</a>
+                                </h4>
+
+                            </div>
+                            <div id="question3" class="panel-collapse collapse" style="height: 0px;">
+                                <div class="panel-body">
+                                    <p>Puedes encontrar toda la documentación utilizada en el siguiente <a href="http://bip-servicio.herokuapp.com/" class="label label-success">Link.</a></p>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
     <!--/panel-group-->
-</div>
+                </div>
+            </div>
 
       
 		
