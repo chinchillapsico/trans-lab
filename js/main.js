@@ -57,29 +57,12 @@ $(document).ready(function() {
      });
 
 
-        obtenerBip(123456);
+       
 
 });
 
 /***********************************Función obtener datos de API TARJETA BIP*************************************/			
 
-function obtenerBip(tarjetaNum){
-	        $.ajax({
-            url: 'http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=' + tarjetaNum,
-            type    : 'GET',
-            dataType: 'json',
-            
-            success : function( data ) {
-                                  console.log(data.saldoTarjeta);
-                     var html   = '<b>Saldo tarjeta bip: </b>'+data.saldoTarjeta+'<br>';
-                          html  += '<b>Fecha saldo: </b>'+data.fechaSaldo+'<br>';
-                          html  += '<b>ID Tarjeta: </b>'+data.id+'<br>';
-                          html  += '<b>Estado contrato: </b>'+data.estadoContrato+'<br>';
-                      if(data === 'ID de la tarjeta invalido'){html = 'ID de la tarjeta invÃ¡lido'};
-                                $("#resultadoBusqueda").html(html);                   
-          }, error   : function( xhr, err ) {
-                        console.log("ERROR");
-                     }
-           });
-}
+
+
 

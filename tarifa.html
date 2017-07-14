@@ -16,30 +16,33 @@
 </head>
 
 <body>
-	<div class="container">
-  		<div class="col-sm-6 col-sm-offset-3">
-  			<form id="formuBip" class="navbar-form">
-  			  <div class="form-group" style="display:inline;">
-  			    <div class="input-group"> 
-  			      <input type="text" class="form-control" placeholder="Ingresa el número de tu tarjeta" name="numeroTarjetaBip" id="numTarjetaInput" maxlength="10">
-  			      <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
-  			    </div>
-  			  </div>
-  			</form>
-  		</div>  		
-  		<div class="col-sm-6 col-sm-offset-3"><!-- vacio --></div>
-  	</div>
-  	<!--............................ Button;INICIAR SESION................................................................ -->
-	<div class="form-group">
-		<label class="col-md-4 control-label"></label>
-		<div class="col-md-4">
-		    <button type="submit" class="btn btn-lg center-block botonEnviar" id="enviaForm">CONSULTAR SALDO</button>
+	<div style="margin: 20px; border-bottom: 80px;">
+		<div class="col-sm-6 col-xs-6">
+			<select class="form-control">
+				<option selected disabled value="">Escoge horario</option>
+					<option value="640">Horario Bajo</option>
+					<option value="680">Horario Medio</option>
+					<option value="740">Horario Alto</option>
+			</select>
+		</div>
+		<div class="col-sm-6 col-xs-6" >
+			<select class="form-control" id="select-input">
+				<option selected disabled value="">Escoge tu tarjeta</option>
+			</select>
 		</div>
 	</div>
-	<div class="panel panel-default">
-  		<div class="panel-body text-center caja" id="resultadoBusqueda"></div>
-	</div>
 	
+	<button type="button" class="btn btn-lg btn-block btn-amarillo" style=" display: initial; margin-top: 130px;">
+		<h3>Costo Pasaje</h3>
+  		<div id="costopasaje"></div>
+	</button>
+	<button type="button" class="btn btn-lg btn-block btn-amarillo" >
+		<h3>Saldo Final</h3>
+  		<div  id="saldofinal"></div>
+	</button>
+	
+	
+				
 	
 <!-- JQUERY -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="

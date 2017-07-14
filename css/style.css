@@ -281,3 +281,10 @@ hr.style2 {
 	background-color: #f6a800;
 
 }
+.caja{
+	display: block;
+	height: 200px;
+	width: 100px;
+	background-color: #f6a800;
+	color:#212121;
+}
