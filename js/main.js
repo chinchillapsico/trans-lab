@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	
+/***********************************Función validar datos con BOOTSTRAP VALIDATOR*************************************/	
     $('#contact_form').bootstrapValidator({
         feedbackIcons: {
             valid: 'glyphicon glyphicon-ok',
@@ -57,15 +57,15 @@ $(document).ready(function() {
      });
 
 
-        tula(123456);
+        obtenerBip(123456);
 
 });
 
-		
+/***********************************Función obtener datos de API TARJETA BIP*************************************/			
 
-function tula(pico){
+function obtenerBip(tarjetaNum){
 	        $.ajax({
-            url: 'http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=' + pico,
+            url: 'http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=' + tarjetaNum,
             type    : 'GET',
             dataType: 'json',
             
@@ -78,7 +78,7 @@ function tula(pico){
                       if(data === 'ID de la tarjeta invalido'){html = 'ID de la tarjeta invÃ¡lido'};
                                 $("#resultadoBusqueda").html(html);                   
           }, error   : function( xhr, err ) {
-                        console.log("Chupalo");
+                        console.log("ERROR");
                      }
            });
 }

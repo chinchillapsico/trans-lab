@@ -1,13 +1,18 @@
-
+/**********************************ESTILOS GENERALES****************************************/
 *{
 	padding: 0; 
 	margin: 0;
 	font-family: 'Fira Sans', sans-serif;
 }
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+body,
+html { height: 100%;}
 
-/**********************************ESTILOS SIGN IN****************************************/
+/**********************************ESTILOS LOG IN****************************************/
 #success_message{ display: none;}
-
 
 #title-h1{
 	font-family: 'Alfa Slab One', cursive;
@@ -39,20 +44,8 @@
     color: #212121; 
 
 }
-body {
-    position: relative;
-    overflow-x: hidden;
-}
-body,
-html { height: 100%;}
-.nav .open > a, 
-.nav .open > a:hover, 
-.nav .open > a:focus {background-color: transparent;}
 
-/*-------------------------------*/
-/*           Wrappers            */
-/*-------------------------------*/
-
+/**************EFECTO CIERRE X************/
 #wrapper {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
@@ -64,7 +57,7 @@ html { height: 100%;}
 #wrapper.toggled {
     padding-left: 220px;
 }
-
+/**************************/
 #sidebar-wrapper {
     z-index: 1000;
     left: 220px;
@@ -80,9 +73,6 @@ html { height: 100%;}
     transition: all 0.5s ease;
 }
 
-#sidebar-wrapper::-webkit-scrollbar {
-  display: none;
-}
 
 #wrapper.toggled #sidebar-wrapper {
     width: 220px;
@@ -97,26 +87,8 @@ html { height: 100%;}
     position: absolute;
     margin-right: -220px;
 }
+/******************************Sidebar nav styles*************************************************************/
 
-/*-------------------------------*/
-/*     Sidebar nav styles        */
-/*-------------------------------*/
-
-.sidebar-nav {
-    position: absolute;
-    top: 0;
-    width: 220px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.sidebar-nav li {
-    position: relative; 
-    line-height: 20px;
-    display: inline-block;
-    width: 100%;
-}
 
 .sidebar-nav li:before {
     content: '';
@@ -133,6 +105,7 @@ html { height: 100%;}
             transition: width .2s ease-in;
 
 }
+/*******************COLORES LI EFECTO***************/
 .sidebar-nav li:first-child a {
     color: #fff;
     background-color: #1a1a1a;
@@ -196,11 +169,7 @@ html { height: 100%;}
     background-color: #222;
     box-shadow: none;
 }
-
-/*-------------------------------*/
-/*       Hamburger-Cross         */
-/*-------------------------------*/
-
+/****************************** Hamburger-Cross ************************************************************/
 .hamburger {
   position: fixed;
   top: 20px;  
@@ -211,45 +180,21 @@ html { height: 100%;}
   margin-left: 15px;
   background: transparent;
   border: none;
+
+
 }
-.hamburger:hover,
-.hamburger:focus,
-.hamburger:active {
+.hamburger:hover,.hamburger:focus,.hamburger:active {
   outline: none;
 }
-.hamburger.is-closed:before {
-  content: '';
-  display: block;
-  width: 100px;
-  font-size: 14px;
-  color: #fff;
-  line-height: 32px;
-  text-align: center;
-  opacity: 0;
-  -webkit-transform: translate3d(0,0,0);
-  -webkit-transition: all .35s ease-in-out;
-}
-.hamburger.is-closed:hover:before {
-  opacity: 1;
-  display: block;
-  -webkit-transform: translate3d(-100px,0,0);
-  -webkit-transition: all .35s ease-in-out;
-}
 
-.hamburger.is-closed .hamb-top,
-.hamburger.is-closed .hamb-middle,
-.hamburger.is-closed .hamb-bottom,
-.hamburger.is-open .hamb-top,
-.hamburger.is-open .hamb-middle,
-.hamburger.is-open .hamb-bottom {
+.hamburger.is-closed .hamb-top,.hamburger.is-closed .hamb-middle,.hamburger.is-closed .hamb-bottom,
+.hamburger.is-open .hamb-top,.hamburger.is-open .hamb-middle,.hamburger.is-open .hamb-bottom {
   position: absolute;
   left: 0;
   height: 4px;
   width: 100%;
 }
-.hamburger.is-closed .hamb-top,
-.hamburger.is-closed .hamb-middle,
-.hamburger.is-closed .hamb-bottom {
+.hamburger.is-closed .hamb-top,.hamburger.is-closed .hamb-middle,.hamburger.is-closed .hamb-bottom {
   background-color: #1a1a1a;
 }
 .hamburger.is-closed .hamb-top { 
@@ -273,13 +218,10 @@ html { height: 100%;}
   bottom: 0;
   -webkit-transition: all .35s ease-in-out;
 }
-.hamburger.is-open .hamb-top,
-.hamburger.is-open .hamb-middle,
-.hamburger.is-open .hamb-bottom {
+.hamburger.is-open .hamb-top,.hamburger.is-open .hamb-middle,.hamburger.is-open .hamb-bottom {
   background-color: #1a1a1a;
 }
-.hamburger.is-open .hamb-top,
-.hamburger.is-open .hamb-bottom {
+.hamburger.is-open .hamb-top,.hamburger.is-open .hamb-bottom {
   top: 50%;
   margin-top: -2px;  
 }
@@ -292,28 +234,8 @@ html { height: 100%;}
   -webkit-transform: rotate(-45deg);
   -webkit-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);
 }
-.hamburger.is-open:before {
-  content: '';
-  display: block;
-  width: 100px;
-  font-size: 14px;
-  color: #fff;
-  line-height: 32px;
-  text-align: center;
-  opacity: 0;
-  -webkit-transform: translate3d(0,0,0);
-  -webkit-transition: all .35s ease-in-out;
-}
-.hamburger.is-open:hover:before {
-  opacity: 1;
-  display: block;
-  -webkit-transform: translate3d(-100px,0,0);
-  -webkit-transition: all .35s ease-in-out;
-}
 
-/*-------------------------------*/
-/*            Overlay            */
-/*-------------------------------*/
+/**************** Overlay ; opacidad del contenido que queda en segundo plano****************************************/
 
 .overlay {
     position: fixed;
@@ -328,7 +250,7 @@ html { height: 100%;}
     z-index: 1;
 }
 
-
+/**************** ESTILOS PROFILE ****************************************/
 div #imgDisplay{
 	width: 50%;
     border:none;
@@ -347,7 +269,15 @@ div .smally{
 hr.style2 {
 	display: block;
 	border-top: 3px double #8c8b8b;
+
 }
 .input-tjt{
 	border-top: 20px;
+}
+/**************** ESTILOS PREGUNTAS FRECUENTES ****************************************/
+.jumbotron{
+	height: 300px;
+
+	background-color: #f6a800;
+
 }

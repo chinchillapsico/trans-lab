@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+/***********************************Función efectos NAVBAR SIDEBAR*************************************/ 
   var trigger = $('.hamburger'),
       overlay = $('.overlay'),
      isClosed = false;
