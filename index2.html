@@ -15,48 +15,56 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	
-	<!--<div class=" col-md-12 col-xs-12 ">
-			<a href="index.html"><i class="fa fa-angle-left flecha-index2" aria-hidden="true"></i></a>
-		</div>-->
-	<div class="navbar navbar-inverse navbar-fixed-top" id="nav-style">
-  		<div class="navbar-header">
-    		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-      			<span class="icon-bar"></span>
-      			<span class="icon-bar"></span>
-      			<span class="icon-bar"></span>
-    		</button>
-    	<h3  id="title-h3" class="text-left">TRANS-LAB</h3>
-  		</div>
-  		<div class="navbar-collapse collapse">
-    		<ul class="nav navbar-nav">
-				<li class="active">
-					<a href="#"><i class="glyphicon glyphicon-usd space"></i>Ver saldo</a>
-				</li>
-			</ul>
-			<ul class="nav navbar-nav">
-				<li class="active">
-					<a href="#"><i class="glyphicon glyphicon-th space"></i>Calcular tarifa</a>
-				</li>
-			</ul>
-			<ul class="nav navbar-nav">
-				<li class="active">
-					<a href="#"><i class="glyphicon glyphicon-user space"></i>Perfil</a>
-				</li>
-			</ul>
-			<ul class="nav navbar-nav">
-				<li class="active">
-					<a href="#"><i class="glyphicon glyphicon-question-sign space"></i>Prefuntas frecuentes</a>
-				</li>
-			</ul>
-			<ul class="nav navbar-nav">
-				<li class="active">
-					<a href="#"><i class="glyphicon glyphicon-home space"></i>Home</a>
-				</li>
-			</ul>
-		</div>
+    <div id="wrapper">
+        <div class="overlay"></div>
+    
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <h1  id="title-h1" class="text-center">TRANS-LAB</h1>
+                <li>
+                    <a href="#">VER SALDO</a>
+                </li>
+                <li>
+                    <a href="#">CALCULAR TARIFA</a>
+                </li>
+                <li>
+                    <a href="#">PERFIL</a>
+                </li>
+                <li>
+                    <a href="#">PREGUNTAS FRECUENTES</a>
+                </li>
+                
+                <li>
+                    <a href="#">HOME</a>
+                </li>
+      
+                
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+    			<span class="hamb-middle"></span>
+				<span class="hamb-bottom"></span>
+            </button>
+            <div class="container">
+                <div class="container" id="btn-large">
+		<button type="button" class="btn btn-lg btn-block btn-amarillo">VER SALDO</button>
+		<button type="button" class="btn btn-lg btn-block btn-amarillo" >CALCULAR TARIFA</button>
+		<button type="button" class="btn btn-lg btn-block btn-amarillo">PERFIL</button>
+		<button type="button" class="btn btn-lg btn-block btn-amarillo">PREGUNTAS FRECUENTES</button>
 	</div>
+            </div>
+        </div>
+ 
+		
 	
+	 
 <!-- JQUERY -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
  	 crossorigin="anonymous"></script>
@@ -64,6 +72,6 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	
 <!-- my javascript -->
-  	<script src="js/main.js"></script>	 
+  	<script src="js/nav-bar.js"></script>	 
 </body>
 </html>
